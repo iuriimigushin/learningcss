@@ -3,179 +3,47 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Learning HTML</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Learning CSS</title>
 </head>
 
 <body>
-  <center>
-    <h1>LEARNING HTML</h1>
-  </center>
-  <hr>
-  <center>
-    <h2>Table of content</h2>
-  </center>
-  <ul>
-    <li>
-      <ul>
-        General webpage
-        <li>Text formating tags</li>
-        <li>Lists</li>
-        <li>Links</li>
-        <li>Blocks and objects display tags</li>
-      </ul></li>
-    <li><ul>
-        <a href="divpractice.html" title="Link to the divpractice.html">Div practice</a>
-        <li>Webpage common pattern example</li>
-        <li>DIV vs OBJECT</li>
-        <li>Object</li>
-        <li>IMG tag for images</li>
-      </ul></li>
-    <li><a href="tablespractice.html">Tables</a></li>
-    <li><a href="formspractice.html">Forms Practice</a></li>
-    <li><a href="semantics.html">Semantics</a></li>
-    <li><a href="crossbrowserlayout.html">Cross-browser layout</a></li>
-  </ul>
-  <hr>
-  <br>
-  <center>
-    <h2>Text formating tags</h2>
-  </center>
-  <p>Simple text.</p>
-  <p><b>Bold text.</b></p>
-  <p><strong>Strong text: bold text with meaning in purpose of SEO.</strong></p>
-  <p><i>Italic text.</i></p>
-  <p><em>Italic text: italic text with meaning in purpose of SEO.</em></p>
-  <p><small>Small text.</small></p>
-  <p><mark>Marked text by yellow font background.</mark></p>
-  <p><del>Deleted text.</del></p>
-  <p>Number in power: 2<sup>2</sup>.</p>
-  <p>Number with index: 2<sub>2</sub>.</p>
-  <p><cite>Cite author.</cite></p>
-  <p><q>Short cite.</q></p>
-  <blockquote>Full cite. Doesn't need paragraph tag.</blockquote>
-  <pre>
-    Complex text block which include many lines with same format brackets.
-    Line 1.
-    Line 2.
-    Line 3.
-    Line 4.
-    Pros: no need to add format style multiply times.
-    Cons: destroy code formating.
-    Summary opinion: cons wins.
-  </pre>
-  <hr>
-  <br>
-  <center>
-    <h2>Lists</h2>
-  </center>
-  <p>HTML have 3 types of lists.</p>
-  <ol>
-    Ordered list:
-    <li>list item 1</li>
-    <li>list item 2</li>
-    <li>list item 3</li>
-  </ol>
-  <ul>
-    Unordered list:
-    <li>list item 1</li>
-    <li>list item 2</li>
-    <li>list item 3</li>
-  </ul>
-  <br>
-  <dl>
-    Description list:
-    <dt>Name 1</dt>
-    <dd>Value 1</dd>
-    <dt>Name 2</dt>
-    <dd>Value 2</dd>
-    <dt>Name 3</dt>
-    <dd>Value 3</dd>
-  </dl>
-  <br>
-  <p>HTML supports lists mix</p>
-  <ol>
-    Ordered list
-    <li>List item 1</li>
-    <li>List item 2</li>
-    <ol>
-      <li>List item 2.1</li>
-      <li>List item 2.2</li>
-      <li>List item 2.3</li>
-    </ol>
-    <li>List item 3</li>
-  </ol>
-  <br>
-  <ol>
-    Ordered list
-    <li>List item 1</li>
-    <li>List item 2</li>
-    <ul>
-      <li>List item 2.A</li>
-      <li>List item 2.B</li>
-      <li>List item 2.C</li>
+  <header>
+    <h1>
+      <center>Learning CSS</center>
+    </h1>
+  </header>
+  <nav>
+    <ul><b>Menu:</b>
+      <li>
+        <ul>How to connect CSS to HTML
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
     </ul>
-    <li>List item 3</li>
-  </ol>
-  <br>
-  <ul>
-    Unordered list with multiply levels:
-    <li>level 1 list item 1</li>
-    <li>level 1 list item 2</li>
-    <ul>
-      Unordered list with multiply levels:
-      <li>level 2 list item 1</li>
-      <li>level 2 list item 2</li>
-      <ul>
-        Unordered list with multiply levels:
-        <li>level 3 list item 1</li>
-        <li>level 3 list item 2</li>
-        <li>level 3 list item 3</li>
-      </ul>
-      <li>level 2 list item 3</li>
-    </ul>
-    <li>level 1 list item 3</li>
-  </ul>
-  <hr>
-  <br>
-  <center>
-    <h2>Links</h2>
-  </center>
-  <p>Anchor is text inside link tag, link's name.</p>
-  <h3>First type of links provide transition between webpages with additional features as option.</h3>
-  <a href="https://www.google.com">Go to google webpage.</a>
-  <br>
-  <a href="linkpage.html">Open link page in the current tab.</a>
-  <br>
-  <a href="linkpage.html" target="_blank">Open link page in the new tab.</a>
-  <br>
-  <a href="https://www.google.com" title="Open google search page">Go to google.</a>
-  <br>
-  <a href="https://www.google.com" title="Go to google.com (JS support planned)">Link to google with a tooltip provide by title tag .</a>
-  <br>
-  <h3>Second type of links provide additional features execution.</h3>
-  <a href="mailto:imigushin@gmail.com">Connect the author.</a>
-  <p>This feature allow open mail client to contact within email.</p>
-  <br>
-  <a href="mailto:imigushin@gmail.com" style="color:green;">Connect the author.</a>
-  <p>Tag "style" provide styling. Styling mostly used as part of CSS, so it's just demo of possibility. Tag could be used with any other tag.</p>
-  <hr>
-  <br>
-  <center>
-    <h2>Blocks and objects display tags</h2>
-  </center>
-  <p>Tag DIV provide code segmenting (mostly for CSS styling).</p>
-  <div>
-  </div>
-  <div>
-    <div>
-      <div>
-      </div>
-    </div>
-  </div>
-  <p>Tag SPAN provide text segmenting by parts (mostly for CSS styling like as coloring).</p>
-  <p>Hello World! My name is Robo <span>Ma-Ma-Mari-io!</span></p>
-  <p>Check practice in <a href="divpractice.html" title="Open refered file in current tab OR use midle mouse button to open in the new tab.">refered file</a></p>
+    <hr>
+  </nav>
+
+  <section name="articlecontainer">
+    <article id="article">
+      <figure><img></figure>
+      <h2></h2>
+      <p></p>
+      <time datetime="2021-08-10 :">2021.08.10 :</time>
+      <hr><br>
+    </article>
+  </section>
+
+  <footer>
+    <hr>
+    <p>Learning CSS by GitHub user iuriimigushin.<br>
+      email: imigushin@gmail.com</p>
+  </footer>
 
 </body>
 
