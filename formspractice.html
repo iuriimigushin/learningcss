@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Forms Practice</title>
+</head>
+
+<body>
+  <center>
+    <h1>FORMS PRACTICE</h1>
+  </center>
+  <a href="index.html" title="Return to main page.">Return to main page.</a>
+  <hr>
+  <br>
+  <h2>Tag Input</h2>
+  <pre>Forms are visual objects.
+      Form is bundle of different fields.
+      FORM - is main tag.
+      INPUT - one-side tag for anykind input.
+      NAME (atr.) - unique name of element.
+      ID (atr.) - unique id of element.
+      TYPE (atr.) - type of content:
+        - "text"
+        - "hidden"
+        - "submit"
+        - "password"
+        - "number"
+        - "email"
+        - "checkbox"
+        - "radio"
+        - "color"
+        - "date"
+        - "time"
+        - "file"
+        - "range"
+      VALUE (atr.) - default value of element. For submit type change default button text.
+      Default value for TEXTAREA should be located BETWEEN parantheses.
+      PLACEHOLDER (atr.) - in-field tooltip. Hiden if field have default value but will appear as soon as field become empty.
+      LABEL - text message. For example text name for input field.
+      LABEL new attribute:
+      FOR (atr.) - make link between input field and label. Activate input field by clicking on label. Write id of corresponding input element.
+      FOR new attirubte:
+      ACTION (atr.) - indicates the path to the handler file.
+      METHOD - transit data by public or hidden:
+        - "get" - public. User will see it as request in browser address field.
+          For example:
+          .../formpractice.html
+          .../formpractice.html?firstname=Myname&?lastname=Mylastname
+        - "post" - hidden.
+      TABINDEX (atr.) - manual option provide switching between elements by TAB key.
+    </pre>
+  <form>
+    <!--
+    <form action="form.php" method="post">
+    -->
+    <p>text <input type="text" name="firstname" Value="Mike" placeholder="Write your name here"></p>
+    <p>hidden <input type="hidden" name="secondname"></p>
+    <p>password <input type="password" name="password" placeholder="Write your password here"></p>
+    <p>number <input type="number" name="age" id="age1"></p>
+    <p>email <input type="email" name="email"></p>
+    <p>checkbox <input type="checkbox" name="checkbox"></p>
+    <p>radio <input type="radio" name="radio"></p>
+    <p>color <input type="color" name="color"></p>
+    <p>date <input type="date" name="date"></p>
+    <p>time <input type="time" name="time"></p>
+    <p>file <input type="file" name="file"></p>
+    <p>submit <input type="submit" name="submitbutton"></p>
+    <p>range <input type="range" name="range" tabindex="1"></p>
+  </form>
+  <hr>
+  <br>
+  <h2>Tag Label</h2>
+  <p>Exercise</p>
+  <form>
+    <p>
+      <label for="logininput1">Login:</label>
+      <input type="text" name="logininput" placeholder="Write your login here" id="logininput1" tabindex="2">
+      <br>
+      <label for="passwordinput1">Password:</label>
+      <input type="password" name="passwordinput" placeholder="Write your password here" id="passwordinput1" tabindex="3">
+      <br>
+      <input type="submit" value="Autorize" tabindex="4">
+    </p>
+  </form>
+  <hr>
+  <br>
+  <h2>Tag Textarea</h2>
+  <p>
+    TEXTAREA - generate big resizable field for input.<br>
+    TEXTAREA new special attribute tags:<br>
+    COLS (atr.) - width of textarea.<br>
+    RAWS (atr.) - height of textarea.<br>
+  </p>
+  <p>textarea <textarea name="biography"></textarea></p>
+  <p>textarea with default value: <textarea name="textareaexample">Default value of textaera.</textarea></p>
+  <p>textarea with default value: <textarea name="textareaexample" placeholder="Default value of textaera."></textarea></p>
+  <p>textarea with cols=1 rows=3: <textarea name="textareaexample" cols="3" rows="1"></textarea></p>
+  <p>textarea with cols=3 rows=1: <textarea name="textareaexample" cols="1" rows="3"></textarea></p>
+  <hr>
+  <br>
+  <h2>Tag Select</h2>
+  <p>
+    SELECT - complex tag of list with chose options.<br>
+    OPTION - choice options for complex tag SELECT.
+  </p>
+  <select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select>
+  <p>Exercise</p>
+  <label for="agechooser">Choose your age:</label>
+  <select id="agechooser">
+    <option value="017">0-17 years</option>
+    <option value="1826">18-26 years</option>
+    <option value="2735">27-35 years</option>
+    <option value="3659">36-59 years</option>
+    <option value="6079">60-79 years</option>
+    <option value="79">>79 years</option>
+  </select>
+  <hr>
+  <br>
+  <h2>Tag Button</h2>
+  <p>
+    BUTTON - is corresponding elemnt tag.<br>
+    Name of the button locate between brackets.<br>
+    <q>Always specify the type attribute for a button element, to tell browsers what type of button it is.</q><cite>w3schools.com</cite>
+    <ul>Types of button element:
+      <li>button</li>
+      <li>reset</li>
+      <li>submit</li>
+    </ul>
+  </p>
+  <p><button>Simple button</button></p>
+  <p><button type="button">Recommended button</button></p>
+  <br>
+  <hr>
+  <a href="index.html" title="Return to main page.">Return to main page.</a>
+</body>
+
+</html>
