@@ -4,6 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Learning CSS</title>
+  <!-- article1 - Connecting CSS to HTML: External CSS (link).
+  <link rel="stylesheet" href="style.css">
+  -->
+  <!-- article1 - Connecting CSS to HTML: External CSS (style).
+  <style>
+    @import "style.css";
+  </style>
+  -->
 </head>
 
 <body>
@@ -14,14 +22,7 @@
   </header>
   <nav>
     <ul><b>Menu:</b>
-      <li>
-        <ul>How to connect CSS to HTML
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </li>
+      <li>Connecting CSS to HTML</li>
       <li></li>
       <li></li>
       <li></li>
@@ -30,12 +31,101 @@
   </nav>
 
   <section name="articlecontainer">
-    <article id="article">
+    <article id="article1">
+      <figure><img></figure>
+      <h2>Connecting CSS to HTML</h2>
+      <section>
+        <ul><h3>Connecting ways:</h3>
+          <li>External CSS (link)</li>
+          <li>External CSS (style)</li>
+          <li>Internal CSS</li>
+          <li>Inline CSS</li>
+        </ul>
+        <h3>External CSS (link)</h3>
+        <p>
+          Example HTML:<br>
+          <i>
+            &lt;head&gt;<br>
+              &lt;link href="style.css" rel="stylesheet"&gt;<br>
+            &lt;head&gt;<br>
+          </i>
+          Example CSS:<br>
+          <i>
+            body {<br>
+              color:blue;<br>
+            }
+          </i>
+        </p>
+        <h3>External CSS (style)</h3>
+        <p>
+          Example HTML:<br>
+          <i>
+            &lt;style&gt;<br>
+               @import "style.css";<br>
+            &lt;style &gt;<br>
+          </i>
+          Example CSS:<br>
+          <i>
+            body {<br>
+              color:blue;<br>
+            }<br>
+          </i>
+          This way is rare but useful in another purpose.<br>
+          Similiar way provide complex multi CSS-files structure: CSS-files import into main CSS file.<br>
+          Example HTML:<br>
+          <i>
+            &lt;head&gt;<br>
+              &lt;style&gt;<br>
+                @import "style.css";<br>
+              &lt;/style&gt;<br>
+            &lt;head&gt;<br>
+          </i>
+          Example CSS:<br>
+          <i>
+            @import "fonts.css"<br>
+            @import "colors.css"<br>
+            <br>
+            body {<br>
+              color:blue;<br>
+            }<br>
+          </i>
+        </p>
+        <h3>Internal CSS</h3>
+        <p>
+
+        </p>
+        <h3>Inline CSS</h3>
+        <p>
+
+        </p>
+      </section>
+      <time datetime="2021-08-10 :">2021.08.10 :</time>
+      <hr>
+    </article>
+
+    <article id="article2">
+      <figure><img></figure>
+      <h2>Commenting in CSS</h2>
+      <p>Use "/*" and "*/" as brackets.<br>
+        For example:<br>
+          <i>
+            /*<br>
+            This is a comment <br>
+            */
+          </i>
+      </p>
+      <time datetime="2021-08-10 :">2021.08.10 :</time>
+      <hr>
+    </article>
+
+    <article id="article3">
       <figure><img></figure>
       <h2></h2>
-      <p></p>
+      <p>
+
+      </p>
       <time datetime="2021-08-10 :">2021.08.10 :</time>
-      <hr><br>
+      <hr>
     </article>
   </section>
 

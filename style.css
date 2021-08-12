@@ -7,5 +7,5 @@ How to connect CSS into mupliply-CSS project:
 @import "colors.css";
 */
 body {
-
+  color:blue;
 }
